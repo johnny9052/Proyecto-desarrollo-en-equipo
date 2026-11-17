@@ -1,19 +1,21 @@
 # Normas del equipo
 
-Equipo 3 · Proyecto: Sistema de Gestión de Prácticas Empresariales
+Equipo 3 · Proyecto: Sistema de certificados en línea
 
-Fecha de acuerdo: 2026-11-20 · Última revisión: 2026-11-20
+Fecha de acuerdo: 20/11/2026 · Última revisión: 20/11/2026
 
 Estas normas fueron acordadas por todos los integrantes. Cualquier cambio se propone en la retrospectiva y se aprueba por consenso.
+
+Jornada de trabajo del equipo: lunes a viernes, de 8:00 a. m. a 6:00 p. m. Fuera de ese horario no se esperan respuestas ni entregas.
 
 ## 1. Comunicación
 
 | Aspecto | Acuerdo |
 |---|---|
-| Canal oficial | Grupo de mensajería "Equipo 3 Prácticas" |
+| Canal oficial | Grupo de mensajería "Equipo 3 Certificados" |
 | Temas técnicos | Comentarios en el issue o pull request correspondiente |
-| Tiempo máximo de respuesta | 12 horas en días hábiles |
-| Horario de mensajes | De 7:00 a 21:00 |
+| Tiempo máximo de respuesta | 4 horas dentro de la jornada de trabajo |
+| Horario de mensajes | Lunes a viernes, de 8:00 a. m. a 6:00 p. m. |
 
 - Lo que se decida por mensajería y afecte el proyecto se registra en un issue o en un acta.
 - No se usan canales privados para decisiones del equipo.
@@ -22,10 +24,10 @@ Estas normas fueron acordadas por todos los integrantes. Cualquier cambio se pro
 
 | Reunión | Día y hora | Duración | Modalidad |
 |---|---|---|---|
-| Reunión semanal de seguimiento | Lunes, 18:00 | 45 minutos | Videollamada |
-| Seguimiento diario | De lunes a viernes | 15 minutos | Escrito, en Discussions (categoría Daily) |
-| Planeación de iteración | Primer lunes de cada iteración | 90 minutos | Presencial |
-| Revisión y retrospectiva | Último viernes de cada iteración | 90 minutos | Presencial |
+| Reunión semanal de seguimiento | Lunes, 8:00 a. m. | 45 minutos | Videollamada |
+| Seguimiento diario | Lunes a viernes, antes de las 9:00 a. m. | 15 minutos | Escrito, en Discussions (categoría Daily) |
+| Planeación de iteración | Primer lunes de cada iteración, 8:00 a. m. (reemplaza la reunión semanal) | 90 minutos | Presencial |
+| Revisión y retrospectiva | Último viernes de cada iteración, 2:00 p. m. | 90 minutos | Presencial |
 
 - La asistencia es obligatoria para todos los integrantes.
 - Cada integrante tiene 7 minutos para informar avances, dificultades y propuestas.
@@ -44,7 +46,7 @@ Estas normas fueron acordadas por todos los integrantes. Cualquier cambio se pro
 
 ## 4. Cumplimiento de compromisos
 
-- Si un integrante no puede cumplir una tarea, avisa por el canal oficial con al menos 24 horas de anticipación.
+- Si un integrante no puede cumplir una tarea, avisa por el canal oficial con al menos un día hábil de anticipación.
 - La tarea se reasigna en la siguiente reunión o se replanea con el gerente de planeación.
 - Dos incumplimientos sin aviso en la misma iteración se tratan en la retrospectiva.
 - Si un problema persiste, el líder de equipo lo informa al docente.
@@ -61,7 +63,7 @@ Estas normas fueron acordadas por todos los integrantes. Cualquier cambio se pro
 | Entrega | Plazo interno |
 |---|---|
 | Tareas de la iteración | 2 días antes de la revisión |
-| Revisión de pull requests | Máximo 24 horas después de abiertos |
+| Revisión de pull requests | Máximo un día hábil después de abiertos |
 | Entregas al docente | 1 día antes de la fecha oficial, revisadas por otro integrante |
 
 ## Firmas de acuerdo

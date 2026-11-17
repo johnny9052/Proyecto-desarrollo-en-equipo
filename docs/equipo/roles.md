@@ -1,6 +1,6 @@
 # Roles del equipo
 
-Equipo 3 · Proyecto: Sistema de Gestión de Prácticas Empresariales
+Equipo 3 · Proyecto: Sistema de certificados en línea
 
 Modelo de referencia: roles de TSPi. Todos los integrantes son desarrolladores y cada uno asume además un rol de gestión.
 
@@ -55,11 +55,11 @@ Además de su rol, cada integrante lidera un área técnica:
 
 | Integrante | Área técnica principal |
 |---|---|
-| Ana Gómez | Frontend: registro de solicitudes |
-| Carlos Ríos | Backend: lógica de negocio |
-| Daniela Marín | Frontend: consultas y listados |
-| Felipe Ospina | Pruebas y validaciones |
-| Laura Cárdenas | Datos y despliegue |
+| Ana Gómez | Casos de uso de la aplicación (solicitud y descarga) |
+| Carlos Ríos | Dominio: entidades y reglas del trámite |
+| Daniela Marín | Puertos y DTO |
+| Felipe Ospina | Validación de escenarios de las specs |
+| Laura Cárdenas | Adaptadores simulados y despliegue |
 
 ## Historial de rotaciones
 

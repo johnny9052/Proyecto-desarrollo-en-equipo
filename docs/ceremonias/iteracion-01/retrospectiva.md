@@ -1,6 +1,6 @@
 # Retrospectiva de la iteración 1
 
-Fecha: 2026-12-04
+Fecha: 04/12/2026, 3:00 p. m.
 
 Asistentes: Ana Gómez, Carlos Ríos, Daniela Marín, Felipe Ospina, Laura Cárdenas
 
@@ -12,10 +12,10 @@ Formato: Bien, mejorar, acciones
 
 | Dato | Valor |
 |---|---|
-| Horas planeadas | 29 |
-| Horas reales | 34 |
-| Ítems terminados | 3 de 4 |
-| Pull requests revisados en menos de 24 h | 4 de 7 |
+| Horas planeadas | 40 |
+| Horas reales | 46 |
+| Ítems terminados | 2 de 3 |
+| Pull requests revisados en un día hábil | 4 de 7 |
 
 ## Qué salió bien
 
@@ -25,17 +25,17 @@ Formato: Bien, mejorar, acciones
 
 ## Qué se puede mejorar
 
-- Varias tareas pasaron de 4 horas (las reglas de asignación tomaron 7 h).
+- Varias tareas pasaron de 4 horas (el caso de uso FirmarCertificado tomó 7 h).
 - Tres pull requests esperaron revisión dos días.
-- El acceso al servicio de correo se pidió tarde.
+- El acceso al ambiente de pruebas del proveedor de firma se pidió tarde.
 
 ## Acciones
 
 | Acción | Responsable | Verificación | Issue |
 |---|---|---|---|
-| Dividir en el refinamiento las tareas estimadas en más de 4 horas | Daniela Marín | Ninguna tarea del tablero supera 4 h | #14 |
-| Revisar pull requests en máximo 24 horas | Felipe Ospina | Revisión en la reunión semanal | #15 |
-| Pedir accesos externos en la planeación | Laura Cárdenas | Lista de accesos en el acta de planeación | #16 |
+| Dividir en el refinamiento las tareas estimadas en más de 4 horas | Daniela Marín | Ninguna tarea del tablero supera 4 h | #11 |
+| Revisar pull requests en máximo un día hábil | Felipe Ospina | Revisión en la reunión semanal | #12 |
+| Pedir accesos externos en la planeación | Laura Cárdenas | Lista de accesos en el acta de planeación | #13 |
 
 Cada acción se registró como issue con la etiqueta "mejora" y entra a la iteración 2.
 

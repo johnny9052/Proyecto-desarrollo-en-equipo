@@ -1,6 +1,6 @@
 # Planeación de la iteración 1
 
-Fecha: 2026-11-23 · Duración de la iteración: 2026-11-23 a 2026-12-04 (2 semanas)
+Fecha: 23/11/2026, 8:00 a. m. · Duración de la iteración: 23/11/2026 a 04/12/2026 (2 semanas)
 
 Asistentes: Ana Gómez, Carlos Ríos, Daniela Marín, Felipe Ospina, Laura Cárdenas
 
@@ -8,7 +8,7 @@ Modera: Daniela Marín (gerente de planeación)
 
 ## Objetivo de la iteración
 
-Permitir que un estudiante registre su solicitud de práctica, que se le asigne un asesor y que el asesor reciba la notificación.
+Que un estudiante solicite un certificado sin costo, que el worker lo firme con reintentos ante fallas del proveedor y que el estudiante lo descargue.
 
 ## Capacidad del equipo
 
@@ -21,32 +21,39 @@ Permitir que un estudiante registre su solicitud de práctica, que se le asigne 
 
 ## Ítems seleccionados
 
-| Issue | Ítem | Prioridad (MoSCoW) | Estimación |
-|---|---|---|---|
-| #3 | Registrar solicitud de práctica | Must | 8 h |
-| #5 | Consultar solicitudes registradas | Must | 6 h |
-| #6 | Asignar asesor | Must | 10 h |
-| #8 | Notificar por correo al asesor | Should | 5 h |
-| | **Total planeado** | | **29 h de 44 h** |
+El orden sale de la matriz de priorización de docs/drivers.md: primero los casos de uso del cuadrante "atender primero" (CU-01, CU-02 y CU-03), ordenados por sus dependencias.
 
-No entra en esta iteración: #9 Leer código QR (16 h), porque con él se superaría la capacidad (29 + 16 = 45 h).
+| Issue | Caso de uso | Especificación | Prioridad | Estimación |
+|---|---|---|---|---|
+| #1 | CU-01 Solicitar certificado | specs/001-solicitar-certificado | Atender primero | 16 h |
+| #3 | CU-03 Firmar digitalmente | specs/003-firmar-digitalmente | Atender primero | 18 h |
+| #7 | CU-07 Descargar certificado firmado | specs/007-descargar-certificado | Si sobra tiempo | 6 h |
+| | **Total planeado** | | | **40 h de 44 h** |
 
-Las 15 h restantes quedan para refinamiento de la iteración 2 y para corregir defectos.
+No entra en esta iteración: #2 CU-02 Pagar el trámite (12 h), porque con él se superaría la capacidad (16 + 18 + 12 = 46 h). Pasa a la iteración 2. Mientras tanto, la iteración trabaja con tipos de certificado sin costo.
+
+CU-07 entra aunque está en "si sobra tiempo": cabe en la capacidad, depende solo de CU-03 y permite que el usuario descargue y revise el resultado.
 
 ## Tareas
 
-| Tarea | Ítem | Responsable | Estimación |
-|---|---|---|---|
-| Elaborar mockup del formulario de registro | #3 | Ana Gómez | 2 h |
-| Implementar la lógica de registro | #3 | Carlos Ríos | 4 h |
-| Diseñar y ejecutar pruebas del registro | #3 | Felipe Ospina | 2 h |
-| Elaborar el listado de solicitudes | #5 | Daniela Marín | 3 h |
-| Implementar la consulta en el backend | #5 | Laura Cárdenas | 3 h |
-| Implementar las reglas de asignación de asesor | #6 | Carlos Ríos | 4 h |
-| Elaborar la pantalla de asignación | #6 | Daniela Marín | 3 h |
-| Probar la asignación de asesor | #6 | Felipe Ospina | 3 h |
-| Configurar el servicio de correo | #8 | Laura Cárdenas | 2 h |
-| Implementar la notificación al asesor | #8 | Ana Gómez | 3 h |
+Las tareas agrupan las del `tasks.md` de cada especificación, sin pasar de 4 horas.
+
+| Tarea | Issue | Tareas de la spec | Responsable | Estimación |
+|---|---|---|---|---|
+| Entidades de dominio de la solicitud | #1 | T-01 a T-05 | Carlos Ríos | 4 h |
+| Puertos, DTO y errores de CU-01 | #1 | T-06 a T-14 | Daniela Marín | 3 h |
+| Caso de uso SolicitarCertificado | #1 | T-15 | Ana Gómez | 4 h |
+| Adaptadores en memoria y simulados de CU-01 | #1 | T-16 a T-20 | Laura Cárdenas | 3 h |
+| Composición y validación de los escenarios de CU-01 | #1 | T-21 y T-22 | Felipe Ospina | 2 h |
+| Entidades Certificado e IntentoFirma | #3 | T-01 a T-03 | Carlos Ríos | 3 h |
+| Puertos de firma, almacenamiento, notificación y cola | #3 | T-04 a T-07 | Daniela Marín | 3 h |
+| Política de reintentos y errores de firma | #3 | T-08 a T-10 | Felipe Ospina | 3 h |
+| Caso de uso FirmarCertificado | #3 | T-11 | Laura Cárdenas | 4 h |
+| Adaptadores simulados de firma, PDF, correo y cola | #3 | T-12 a T-15 | Ana Gómez | 3 h |
+| Composición y validación de los escenarios de CU-03 | #3 | T-16 y T-17 | Felipe Ospina | 2 h |
+| Puerto de lectura de PDF, DTO y errores de CU-07 | #7 | T-01 a T-05 | Daniela Marín | 2 h |
+| Caso de uso DescargarCertificado | #7 | T-06 | Carlos Ríos | 2 h |
+| Adaptador, composición y validación de CU-07 | #7 | T-07 a T-09 | Felipe Ospina | 2 h |
 
 Todas las tareas tienen un responsable, duran máximo 4 horas y están en el tablero de GitHub Projects.
 
@@ -54,7 +61,7 @@ Todas las tareas tienen un responsable, duran máximo 4 horas y están en el tab
 
 | Riesgo | Acción | Responsable |
 |---|---|---|
-| Acceso al servicio de correo institucional | Usar un servicio de pruebas mientras se obtiene el acceso | Laura Cárdenas |
+| El proveedor de firma es lento e inestable (RT-03, R-02) | Trabajar con el proveedor simulado (éxito, lento y caído) | Laura Cárdenas |
 | Semana de parciales en otras materias | Margen de imprevistos del 20 % | Daniela Marín |
 
 ## Compromiso
